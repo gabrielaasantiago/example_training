@@ -1,3 +1,5 @@
+
+console.log("Hello World")
 function makeCoffee(sugar, milk) { 
     var instructions = "Boil water,";
 
