@@ -1,5 +1,5 @@
 
-console.log("Hello World")
+// console.log("Hello World")
 function makeCoffee(sugar, milk) { 
     var instructions = "Boil water,";
 
@@ -12,3 +12,26 @@ function makeCoffee(sugar, milk) {
 }
 
 console.log(makeCoffee(2, 20));
+
+var car = {
+    color: "red",
+    speed: 200,
+    drive: function () { return "drive"; }
+};
+
+var shoppinglist = [
+    "Apple",
+    "Orange",
+    "Pear"
+]
+
+var automovel = {
+    make: "volvo",
+    speed: 160,
+    engine: {
+        size: 2.0,
+        make: "bmw",
+        fuel: "petrol",
+        pistons: ["piston1", "piston2", { maker: "BMW" } ]
+    }
+};
