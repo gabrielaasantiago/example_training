@@ -32,6 +32,31 @@ var automovel = {
         size: 2.0,
         make: "bmw",
         fuel: "petrol",
-        pistons: ["piston1", "piston2", { maker: "BMW" } ]
-    }
+        pistons: ["piston1", "piston2", { maker: "BMW" }, {maker: "BMW2"} ]
+    },
+    drive: function () { return "drive"; }
 };
+
+var array = [
+    "string",
+    100,
+    ["embed", 200],
+    { car: "ford" },
+    function () { return "drive"; } 
+];
+const a = 10;
+
+console.log(automovel.make);
+console.log(automovel.engine.pistons[1]);
+console.log(array[a - 5 - 2]);
+console.log(automovel["engine"]);
+console.log(automovel["engine"]["pistons"]);
+console.log(automovel["engine"]["pistons"][1]);
+console.log(automovel["engine"]["pistons"][3]["maker"]);
+
+var pointer = "make";
+
+console.log(automovel[pointer]);
+
+console.log(automovel["en" + "gine"]);
+console.log(automovel.engine);
