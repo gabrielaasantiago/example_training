@@ -70,3 +70,23 @@ console.log(array.pop());
 console.log(array);
 console.log(array.unshift("float"));
 console.log(array);
+console.log(array.push("keep going", 2022, 23.99, function () { return beGood }));
+console.log(array);
+console.log(array.splice(2, 2));
+console.log(array);
+console.log(array.splice(1, 0, "inserting elements", 23.4 ));
+console.log(array);
+console.log(array.splice(2, 2, 100, 23.4));
+console.log(array);
+
+var myName = "Santiago";
+console.log( myName, printName() );
+
+function printName() { 
+    console.log(b);
+    var b = 700;
+    function embed() { return "show" };
+    return "Gabi Aparecida"
+}
+
+
