@@ -42,7 +42,8 @@ var array = [
     100,
     ["embed", 200],
     { car: "ford" },
-    function () { return "drive"; } 
+    function () { return "drive"; },
+    "new value"
 ];
 const a = 10;
 
@@ -60,3 +61,12 @@ console.log(automovel[pointer]);
 
 console.log(automovel["en" + "gine"]);
 console.log(automovel.engine);
+
+console.log(automovel["speed"] *= 2);
+console.log(array);
+console.log(array.shift());
+console.log(array);
+console.log(array.pop());
+console.log(array);
+console.log(array.unshift("float"));
+console.log(array);
