@@ -119,4 +119,18 @@ console.log(engine2.headGasket.pots[0]);
 console.log(runExpression());
 
 
-    
+var object = {
+    prop: this,
+    method: function () { return this; }
+};
+
+var array = [
+    this,
+    function () { return this; }
+];
+
+function global() { 
+    return this;
+}
+
+global.call(object);
