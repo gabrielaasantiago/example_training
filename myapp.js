@@ -79,14 +79,44 @@ console.log(array);
 console.log(array.splice(2, 2, 100, 23.4));
 console.log(array);
 
-var myName = "Santiago";
-console.log( myName, printName() );
 
+console.log( myName, printName() );
+var myName = "Santiago";
 function printName() { 
-    console.log(b);
+    console.log(b, embed());
     var b = 700;
     function embed() { return "show" };
     return "Gabi Aparecida"
 }
 
+var engine2 =
+{
+    maker: "Ford",
+    headGasket: {
+        pots: [
+            "piston1",
+            "piston1"
+        ]
+    }
+}
 
+function runExpression()
+{ 
+    var c = 10;
+
+    function add()
+    { 
+        console.log( engine2 );
+        return c + 90
+    }
+
+    add();
+}
+
+console.log(engine2[0]);
+console.log(engine2.headGasket);
+console.log(engine2.headGasket.pots[0]);
+console.log(runExpression());
+
+
+    
